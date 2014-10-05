@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotionPre/lib")
+require 'motion/project/template/android'
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'HelloAndroid'
+  app.api_version = '17'
+  app.sdk_path = "/Users/jh/ANDROID/sdk/"
+  app.ndk_path = "/Users/jh/ANDROID/ndk/"
+  app.package = "cz.jirihysek.androidweek1"
+end

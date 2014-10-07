@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0H4-CD-iSW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main Controller-->
@@ -17,8 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-vp-NBx">
-                                <rect key="frame" x="16" y="20" width="563" height="115"/>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0y-hy-G1d">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="The Question" id="urr-pU-Cz8"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-vp-NBx">
+                                <rect key="frame" x="16" y="64" width="563" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,9 +31,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PZ1-vp-NBx" firstAttribute="top" secondItem="ybN-77-nqe" secondAttribute="bottom" id="2cq-Tb-8tj"/>
-                            <constraint firstItem="PZ1-vp-NBx" firstAttribute="leading" secondItem="s3P-Gh-pxu" secondAttribute="leadingMargin" id="iPL-pv-KbT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PZ1-vp-NBx" secondAttribute="trailing" constant="5" id="nS4-zb-kJw"/>
+                            <constraint firstItem="F0y-hy-G1d" firstAttribute="top" secondItem="ybN-77-nqe" secondAttribute="bottom" id="YV7-n8-jrM"/>
+                            <constraint firstAttribute="width" secondItem="F0y-hy-G1d" secondAttribute="width" id="p6Z-sv-y3y"/>
                         </constraints>
                     </view>
                     <connections>

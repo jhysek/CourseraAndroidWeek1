@@ -4,8 +4,8 @@ class MainActivity < Android::App::Activity
 
   def onCreate(savedInstanceState)
     super
-    setContentView(resources.getIdentifier('answer_layout', 'layout', 'cz.jirihysek.androidweek1'))
-    answerView = findViewById(resources.getIdentifier('answer_view', 'id', 'cz.jirihysek.androidweek1'))
+    setContentView(resources.getIdentifier('answer_layout', 'layout', packageName))
+    answerView = findViewById(resources.getIdentifier('answer_view', 'id', packageName))
 
     val = findAnswer
     output = (val == 42) ? "42" : "We may never know"
